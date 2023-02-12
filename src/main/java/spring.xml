@@ -6,16 +6,22 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
 
-	<bean id="doctor" class ="demo.Doctor">
+	 <bean id="doctor" class ="demo.Doctor">
 		
-		<constructor-arg value="MBBS"></constructor-arg>
-		<!-- <property name="qualification" value="MBBS"></property> -->
-	<!-- 	<property name="nurse" ref="nurse"></property> -->
+	<!-- 	<constructor-arg value="MBBS"></constructor-arg>
+		<property name="qualification" value="MBBS"></property>
+		<property name="nurse" ref="nurse"></property> -->
 		
 	</bean>
 	
 	<bean id="nurse" class ="demo.Nurse">
 	
 		
-	</bean>
+	</bean> 
+	
+	<!--  <component-scan base-package="demo"	/>-->	 
+		 
+		
+	
+		
 </beans>
